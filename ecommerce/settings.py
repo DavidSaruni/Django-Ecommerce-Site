@@ -123,6 +123,10 @@ STATIC_URL = "/static/"
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
+# configuring images url to access them on the browser
+MEDIA_URL = '/images/'
+# adding images to the static/images folder
+MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
